@@ -3,7 +3,8 @@ P{
     font-size: 24px;
 }
  div {
-    width: 400px;
+    width: 100px;
+    max-width: 400px;
     height: 400px;
     background-color: red;
  }
