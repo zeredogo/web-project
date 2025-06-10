@@ -3,10 +3,11 @@ P{
     font-size: 24px;
     width: 500px;
     height: 700px;
+
 }
  div {
-    width: 100px;
-    max-width: 400px;
+    width: 400px;
+    max-width: 500px;
     height: 400px;
     background-color: red;
  }
