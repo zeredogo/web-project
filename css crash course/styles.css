@@ -8,18 +8,19 @@
 
     /* width */
     width: 100%;
-    max-width: 300px;
+    max-width: 100vw;
     
 
 }
+
  div {
     /* color */
     background-color: red;
 
     /* width and height */
     width: 100%;
-    max-width: 70vwpx;
-    height: 70vh;
+    max-width: 70vw;
+    
     
  
     /* fonts */
@@ -30,3 +31,29 @@
     /* border */
     border: 4px solid blue;
  }
+
+ #first-paragraph {
+    color: green;
+ }
+
+ #last-paragraph {
+    color: aqua;
+ }
+
+ .paragraph-1 {
+    color: blue;
+ }
+p{
+    color: darkslategrey;
+}
+.paragraph-box{
+    color: #000;
+}
+.box{
+    background-color: #fff;
+    width: 200px;
+    border: 4px solid green;
+    padding: 20px;
+    margin: 30px;
+}
+
