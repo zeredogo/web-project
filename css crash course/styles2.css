@@ -1,22 +1,12 @@
-.title{
-    font-size: 52px;
+button {
+    transition: 300ms;
 }
-.paragraph{
-    font-size: 24px;
+button:hover {
+    opacity: 30%;
+    background-color: red;
+    padding: 4px;
 }
-@media (max-width: 640px) {
-    .title{
-        font-size: 36px;
-    }
-    .paragraph{
-        font-size: 24px;
-    }
-}
-@media (max-width: 480px) {
-    .title{
-        font-size: 32px;
-    }
-    .paragraph{
-        font-size: 20px;
-    }
+
+p::before{
+    content: "Hey my name is";
 }

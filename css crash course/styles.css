@@ -74,3 +74,25 @@ top: 0;
 body{
     height: 150vh;
 }
+.title-m{
+    font-size: 52px;
+}
+.paragraph-m{
+    font-size: 24px;
+}
+@media (max-width: 640px) {
+    .title-m{
+        font-size: 36px;
+    }
+    .paragraph-m{
+        font-size: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .title-m{
+        font-size: 32px;
+    }
+    .paragraph-m{
+        font-size: 20px;
+    }
+}
