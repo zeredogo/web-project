@@ -9,4 +9,6 @@ button:hover {
 
 p::before{
     content: "Hey my name is";
+    background-color: green;
+    margin: 8px;
 }
