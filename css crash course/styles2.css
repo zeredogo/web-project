@@ -6,9 +6,22 @@ button:hover {
     background-color: red;
     padding: 4px;
 }
-
+/* 
 p::before{
     content: "Hey my name is";
     background-color: green;
     margin: 8px;
+} */
+
+p{
+    animation: pointdown 1000ms infinite alternate-reverse;
+}
+
+@keyframes pointdown{
+    0%{
+        transform: translateY(0)
+    }
+    100%{
+        transform: translateY(16px)
+    }
 }
