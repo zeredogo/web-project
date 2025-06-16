@@ -48,3 +48,16 @@ if (age > 18 || hasId === true) {
 else {
     console.log(`you're ${age} years old, get outta here`)
 }
+
+// Ternary Operator
+
+let isRaining = true;
+
+isRaining ? console.log('it is raining') : console.log('it not raining')
+
+let loggedIn = true;
+let hasMembershipCard = true;
+
+let str = loggedIn && hasMembershipCard ? 'show video' : "don't show video";
+
+console.log(str)
