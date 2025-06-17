@@ -1,22 +1,27 @@
-// Loops
-// DRY = Don't Repeat Yourself
-let counter = 1
-while (counter <= 5) {
-    console.log(counter)
-    counter++;
+/* Function
+//  function Declaration
+ function greetUser(name, time) {
+    console.log(`Good ${time}, ${name}`)
  }
- console.log("while loop finished running")
 
-//  for (let i = 1; i <= 20; i++) {
-//     if(i % 5 === 0) {
-//         console.log(`${i} - ASAP Frontend`)
-//     } else if (i % 2 === 0) {
-//         console.log(`${i} - Frontend`)
-//     }else {
-//         console.log(`${i} - ASAP`)
-//     }
-//  }
-let str = "ASAP frontend";
- for ( let i = 0; i <= str.length; i++) {
-    console.log(str[i])
+//  call the function
+ greetUser("Paul", "Morning");
+ greetUser("Dogo", "evening")*/
+
+ function sum(num1, num2) {
+   return num1 + num2
  }
+
+ console.log(sum(2, 7))
+
+ /* Create a function that converts $USD into AUD
+  $AUD to $USD formula:
+  AUD = USD x 1.5
+ */
+
+  function convertUsdToAud(aud) {
+    return aud * 1.5
+  }
+   console.log(convertUsdToAud(1000))
+   console.log(convertUsdToAud(500))
+   console.log(convertUsdToAud(200))

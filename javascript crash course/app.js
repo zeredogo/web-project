@@ -61,3 +61,32 @@ let hasMembershipCard = true;
 let str = loggedIn && hasMembershipCard ? 'show video' : "don't show video";
 
 console.log(str)
+// Loops
+// DRY = Don't Repeat Yourself
+let counter = 1
+while (counter <= 5) {
+    console.log(counter)
+    counter++;
+ }
+ console.log("while loop finished running")
+
+ /* write a for-loop that loops through 1 to 20.
+if the number is odd, print 'ASAP'
+if the number is even, print "frontend"
+if the number is divisible by 5, print "ASAP frontend"
+*/
+  for (let i = 1; i <= 20; i++) {
+     if(i % 5 === 0) {
+         console.log(`${i} - ASAP Frontend`)
+     } else if (i % 2 === 0) {
+         console.log(`${i} - Frontend`)
+     }else {
+         console.log(`${i} - ASAP`)
+     }
+  }
+/* Print out all the character from the string:
+"ASAP frontend" */
+let str1 = "ASAP frontend";
+ for ( let i = 0; i <= str.length; i++) {
+    console.log(str1[i])
+ }
