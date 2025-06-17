@@ -8,42 +8,42 @@
  greetUser("Paul", "Morning");
  greetUser("Dogo", "evening")*/
 
- function sum(num1, num2) {
-   return num1 + num2
- }
+//  function sum(num1, num2) {
+//    return num1 + num2
+//  }
 
- console.log(sum(2, 7))
+//  console.log(sum(2, 7))
 
- /* Create a function that converts $USD into AUD
-  $AUD to $USD formula:
-  AUD = USD x 1.5
- */
-// Regular function
-  function convertUsdToAud(dollars) {
-    return dollars * 1.5
-  }
-   console.log(convertUsdToAud(1000))
-   console.log(convertUsdToAud(500))
-   console.log(convertUsdToAud(200))
+//  /* Create a function that converts $USD into AUD
+//   $AUD to $USD formula:
+//   AUD = USD x 1.5
+//  */
+// // Regular function
+//   function convertUsdToAud(dollars) {
+//     return dollars * 1.5
+//   }
+//    console.log(convertUsdToAud(1000))
+//    console.log(convertUsdToAud(500))
+//    console.log(convertUsdToAud(200))
 
-   // Arrow function
+//    // Arrow function
 
-  const convertUsdToAud2 = (dollars) => {
-     return dollars * 1.5
-  }
+//   const convertUsdToAud2 = (dollars) => {
+//      return dollars * 1.5
+//   }
 
-  console.log(convertUsdToAud2(350))
+//   console.log(convertUsdToAud2(350))
 
-  // Arrays
-  let array = [20, 15, 10, 30, 5]
-  // first element of an array
-  console.log(array[0])
-  // Last element of an array
-console.log(array[array.length - 1])
+//   // Arrays
+//   let array = [20, 15, 10, 30, 5]
+//   // first element of an array
+//   console.log(array[0])
+//   // Last element of an array
+// console.log(array[array.length - 1])
 
 // array methods
 // Mutating method
-array.push(13)
+//array.push(13)
 
 // Non-mutating method
 
@@ -62,8 +62,8 @@ let filteredArray = array.filter(element => {
     })
 */
     // there is another way but only if you are returning a single line of code 
-    let filteredArray = array.filter(element => element <= 15)
-console.log(filteredArray)
+//     let filteredArray = array.filter(element => element <= 15)
+// console.log(filteredArray)
 
 //Exercise
 // Filter out all the people who are not 18+ years old
@@ -99,18 +99,53 @@ for ( let i = 0; i < people.length; i++) {
 
   // Filter out without using .filter method
 
-  let people = [18, 20, 16, 15, 21];
+  //let people = [18, 20, 16, 15, 21];
 
   // Create a new empty array (called Adults)
+  // let adults = [];
 
-  let adults = [];
+  // for ( let i = 0; i < people.length; i++) {
 
-  for ( let i = 0; i < people.length; i++) {
   //Check if age is 18+
+ // if (people[i] >= 18){
   //TRUE - Add element to the new array
-  if (people[i] >= 18){
-    adults.push(people[i])
-  }
-}
+//     adults.push(people[i])
+//   }
+// }
 
-console.log(adults)
+// console.log(adults)
+
+
+// Map
+
+let array = [1, 2, 3, 4, 5, 6];
+
+// Non- mutating method
+let newArray = array.map(element => null)
+
+console.log(newArray)
+
+let usDollar = [10, 20, 30, 35, 40, 100, 150];
+
+// let auDollar = usDollar.map((element) => {
+//   return element * 1.5
+// })
+let auDollar = usDollar.map(element => element * 1.5)
+
+console.log(auDollar)
+
+// converting this without using the .map method
+let usDollars = [10, 20, 30, 35, 40, 100, 150];
+
+// crete a new empty array 
+let auDollars  = [];
+
+// Loop through every element in usDollars array
+ for (let i = 0; i < usDollars.length; i++) {
+  // Turn each element from USD to AUD
+  // Add each element onto auDollars array
+  auDollars.push( usDollars[i] * 1.5)
+ }
+
+ // console.log auDollars array
+ console.log(auDollars)
