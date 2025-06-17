@@ -18,10 +18,18 @@
   $AUD to $USD formula:
   AUD = USD x 1.5
  */
-
-  function convertUsdToAud(aud) {
-    return aud * 1.5
+// Regular function
+  function convertUsdToAud(dollars) {
+    return dollars * 1.5
   }
    console.log(convertUsdToAud(1000))
    console.log(convertUsdToAud(500))
    console.log(convertUsdToAud(200))
+
+   // Arrow function
+
+  const convertUsdToAud2 = (dollars) => {
+     return dollars * 1.5
+  }
+
+  console.log(convertUsdToAud2(350))
