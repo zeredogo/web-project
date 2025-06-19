@@ -1,20 +1,43 @@
-for (let i = 1; i <= 15; i++) {
-    if (i % 5 === 0) {
-        console.log("ASAP frontend")
-    } else if (i % 2 === 0 ) {
-        console.log("frontend")
-    } else {
-        console.log("ASAP")
-    }
+// Object
+let users = [
+    {
+    email: "example@gmail.com",
+    password: "text1234",
+    name: "Paul Dogo",
+    discord: "examplediscord",
+    subscription: "VIP+"
+},
+{
+    email: "dogo@gmail.com",
+    password: "text1234",
+    name: "Dogo",
+    discord: "dogodiscord",
+    subscription: "VIP+",
+    lessonCompleted: [1, 2, 3, 4]
+},
+]
+
+console.log(users)
+
+let signUps =[{}]; 
+
+//const signUp = (email, password, name, discord, subscription, lessonCompleted) => {
+ //   return  signUps[0].push(email, password, name, discord, subscription, lessonCompleted)
+//}
+
+//console.log(signUp("paul@email.com", "text", "Sunday", "pauldiscord","VIP+", 5))
+
+
+function signUp(user) {
+   users.push(user)
 }
-
-let str = "ASAP frontend";
-for (let i = 0; i < str.length; i++) {
-    console.log(str[i])
-}
-
-const auDollar = dollar => dollar * 1.5
-
-console.log(auDollar(1000))
-console.log(auDollar(500))
-console.log(auDollar(200))
+signUp(
+  { 
+   email: "paul@email.com", 
+   password: "text", 
+   name: "Sunday", 
+   discord: "pauldiscord",
+   subscription:"VIP+", 
+   lessonCompleted: [1, 2]
+})
+console.log(users)
