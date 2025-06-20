@@ -58,10 +58,11 @@ console.log(document.getElementById('heading'))
 // change CSS
 document.querySelector('h1').style.backgroundColor = "red"
 
+// DOM EventListener
 function changeButtonToGreen() {
     document.querySelector('button').style.backgroundColor = "green"
 }
 
 function toggleSidebar() {
-    console.log("Toggle sidebar")
+    document.querySelector('body').classList.toggle("open")
 }
