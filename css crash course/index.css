@@ -4,3 +4,10 @@ h1 {
     font-weight: bolder;
     background-color: black;
 }
+
+div {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    background-color: aqua;
+}
