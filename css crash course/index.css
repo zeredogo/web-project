@@ -6,7 +6,16 @@ h1 {
 }
 
 div {
+    /* width and height */
     width: 100%;
-    max-width: 400px;
+    max-width: 70vw;
+    height: 100vh;
+
+    /* color */
     background-color: aqua;
+
+    /* Fonts */
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
 }
