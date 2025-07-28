@@ -1,21 +1,24 @@
 h1 {
-    color: rgb(255, 101, 101);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    background-color: black;
+  color: rgb(255, 101, 101);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  background-color: black;
 }
 
 div {
-    /* width and height */
-    width: 100%;
-    max-width: 70vw;
-    height: 100vh;
+  /* width and height */
+  width: 100%;
+  max-width: 70vw;
+  height: 100vh;
 
-    /* color */
-    background-color: aqua;
+  /* color */
+  background-color: aqua;
 
-    /* Fonts */
-    font-size: 24px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
+  /* Fonts */
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Border */
+  border: 4px solid blue;
 }
