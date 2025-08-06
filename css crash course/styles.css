@@ -94,5 +94,6 @@ body{
     }
     .paragraph-m{
         font-size: 20px;
+        border-radius: 5px solid black;
     }
 }
