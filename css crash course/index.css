@@ -20,6 +20,10 @@ div {
 
   /* Border */
   border: 4px solid blue;
+
+  /* Padding */
+  padding: 10px;
+  
 }
 
 .paragraph1 {
