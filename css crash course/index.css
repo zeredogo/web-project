@@ -81,19 +81,45 @@ p {
 
 @media (max-width: 640px) {
   .title {
-  font-size: 36px;
-}
-.paragraph {
-  font-size: 20px;
-}
+    font-size: 36px;
+  }
+  .paragraph {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
   .title {
-  font-size: 32px;
-}
-.paragraph {
-  font-size: 14px;
-}
+    font-size: 32px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
 }
 
+button {
+  transition: 300ms;
+}
+button:hover {
+  opacity: 30%;
+  background-color: cadetblue;
+  padding: 4px;
+}
+
+p::before {
+  content: "";
+  background-color: blueviolet;
+  margin: 8px;
+}
+
+p {
+  animation: pointdown 1000ms infinite alternate-reverse;
+}
+@keyframes pointdown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(16px);
+  }
+}
